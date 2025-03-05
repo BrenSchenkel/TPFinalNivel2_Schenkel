@@ -150,7 +150,7 @@ namespace negocio
                 {
                     consulta += " and C.Descripcion like '" + categoria + "'";
                 }
-                if(filtro.Length < 0)
+                if(filtro != "")
                 {
                     consulta += " and Nombre like '%" + filtro + "%'";
                 }
